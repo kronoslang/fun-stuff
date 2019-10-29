@@ -1,0 +1,43 @@
+{:documentation "Convert MIDI note number to frequency"
+ :draft-argument "60"
+ :identifier "mtof"
+ :identity "gf1415fa3pgv25h"
+ :patch
+{:cables
+{["b3t92aroiwyv5rh" 0] [:fixed "neehcjix1jqc5cc" 0]
+ ["ffnwlude42o951v" 0] [:fixed "b3t92aroiwyv5rh" 0]
+ ["imaay1n2baam9y1" 0] [:fixed "ffnwlude42o951v" 0]
+ ["neehcjix1jqc5cc" 0] [:fixed "d3xstahngcggmsv" 0]}
+ :nodes
+{"b3t92aroiwyv5rh" 
+{:inputs ["a"]
+ :label "/ 12"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:float "12"]]
+ :pos [-261 -9]}
+ "d3xstahngcggmsv" 
+{:inputs []
+ :label "note = arg"
+ :outputs ["note"]
+ :parsed "arg"
+ :pos [-520 -9]}
+ "ffnwlude42o951v" 
+{:inputs ["b"]
+ :label "Math:Pow(2 $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:float "2"] [:free-var "b"]]]
+ :pos [-125 -9]}
+ "imaay1n2baam9y1" 
+{:inputs ["a"]
+ :label "* 440"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:float "440"]]
+ :pos [92 -9]}
+ "neehcjix1jqc5cc" 
+{:inputs ["a"]
+ :label "- 69"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "69"]]
+ :pos [-397 -9]}}
+ :scale 1
+ :scroll [0 0]}}

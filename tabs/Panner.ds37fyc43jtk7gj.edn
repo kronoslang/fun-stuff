@@ -1,0 +1,59 @@
+{:draft-argument "Gen:Sin(440) Gen:Phasor(0.1)"
+ :identifier "Panner"
+ :identity "ds37fyc43jtk7gj"
+ :patch
+{:cables
+{["1cqr5pvfawq86w3" 0] [:fixed "3hv6bphet5u397m" 0]
+ ["3hv6bphet5u397m" 0] [:fixed "puo4n4b0or3wwbh" 1]
+ ["cgmfmxkee438f3x" 0] [:fixed "1cqr5pvfawq86w3" 0]
+ ["e2b4q5uhad9adpc" 0] [:fixed "fhy8aadzsk599t" 0]
+ ["e2b4q5uhad9adpc" 1] [:fixed "hvw37hh0vduzehw" 0]
+ ["fhy8aadzsk599t" 0] [:fixed "cgmfmxkee438f3x" 0]
+ ["fhy8aadzsk599t" 1] [:fixed "puo4n4b0or3wwbh" 0]
+ ["hvw37hh0vduzehw" 0] [:fixed "1cqr5pvfawq86w3" 0]
+ ["hvw37hh0vduzehw" 1] [:fixed "puo4n4b0or3wwbh" 0]}
+ :nodes
+{"1cqr5pvfawq86w3" 
+{:inputs ["b"]
+ :label "Min(#1 $b)"
+ :outputs [""]
+ :parsed [:fn "Min" [:tuple [:invariant "1"] [:free-var "b"]]]
+ :pos [-296 19]}
+ "3hv6bphet5u397m" 
+{:inputs ["b"]
+ :label "Max(#0 $b)"
+ :outputs [""]
+ :parsed [:fn "Max" [:tuple [:invariant "0"] [:free-var "b"]]]
+ :pos [-514 19]}
+ "cgmfmxkee438f3x" 
+{:inputs ["b"]
+ :label "#1 -"
+ :outputs [""]
+ :parsed [:infix [:invariant "1"] "-" [:free-var "b"]]
+ :pos [-141 82]}
+ "e2b4q5uhad9adpc" 
+{:ephemeral-inputs #{"elements1" "elements2"}
+ :inputs ["elements1" "elements2" "elements..."]
+ :label "Vector:Cons($elements...)"
+ :outputs [""]
+ :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements..."]]]
+ :pos [130 10]
+ :selected true}
+ "fhy8aadzsk599t" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-42 82]}
+ "hvw37hh0vduzehw" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-47 -69]}
+ "puo4n4b0or3wwbh" 
+{:inputs []
+ :label "(sig pan) = arg"
+ :outputs ["sig" "pan"]
+ :parsed "arg"
+ :pos [-575 -73]}}}}

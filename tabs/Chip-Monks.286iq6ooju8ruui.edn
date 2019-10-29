@@ -1,0 +1,259 @@
+{:export 
+{:export-this-tab true}
+ :identifier "Chip-Monks"
+ :identity "286iq6ooju8ruui"
+ :patch
+{:cables
+{["11epgup4u032tqy" 0] [:fixed "stxjg1ycw3pdusl" 0]
+ ["5073lluowg3fi7f" 0] [:fixed "8szb55dsrwtkhfz" 0]
+ ["5073lluowg3fi7f" 1] [:fixed "7hw3u02ws5xwadx" 0]
+ ["5rzqgh44q8vg88g" 0] [:fixed "c7865o69lcj8xet" 0]
+ ["5rzqgh44q8vg88g" 1] [:fixed "4jkspq6y8vcci3y" 0]
+ ["65kksuovemme4ds" 0] [:fixed "6uji0b9i3mkleej" 0]
+ ["6uji0b9i3mkleej" 0] [:fixed "dblcsav0o0x44wr" 0]
+ ["6uji0b9i3mkleej" 1] [:fixed "k37rld13vesuu1y" 0]
+ ["6uji0b9i3mkleej" 2] [:fixed "5rzqgh44q8vg88g" 0]
+ ["7hw3u02ws5xwadx" 0] [:fixed "65kksuovemme4ds" 0]
+ ["7hw3u02ws5xwadx" 1] [:fixed "fkhbas7uo8yl0uh" 1]
+ ["7hw3u02ws5xwadx" 2] [:fixed "11epgup4u032tqy" 0]
+ ["8szb55dsrwtkhfz" 0] [:fixed "65kksuovemme4ds" 0]
+ ["8szb55dsrwtkhfz" 1] [:fixed "srsbh7egshln1v" 0]
+ ["8szb55dsrwtkhfz" 2] [:fixed "11epgup4u032tqy" 0]
+ ["8tx8t1m6oe81mhk" 0] [:fixed "5073lluowg3fi7f" 0]
+ ["9q48dzuyiyubnwe" 0] [:fixed "oal0qo4l9bqtpyl" 0]
+ ["cycz1t2poqi8gv9" 0] [:fixed "z9jag580sj1v2wp" 0]
+ ["fkhbas7uo8yl0uh" 0] [:fixed "7ccvqan9p2d2yqw" 0]
+ ["j3gcssco99yj8gz" 0] [:fixed "fkhbas7uo8yl0uh" 0]
+ ["j4529iof817ortc" 0] [:fixed "cycz1t2poqi8gv9" 0]
+ ["j4529iof817ortc" 1] [:fixed "9q48dzuyiyubnwe" 0]
+ ["j4529iof817ortc" 2] [:fixed "ezwncmchb1si3i" 0]
+ ["j4529iof817ortc" 3] [:fixed "u0u9z4alja9zooz" 0]
+ ["j4529iof817ortc" 4] [:fixed "44jbqv7a85auzdp" 0]
+ ["j4529iof817ortc" 5] [:fixed "77k3y1v7z5sye45" 0]
+ ["j4529iof817ortc" 6] [:fixed "6ns28wsyv5rzjem" 0]
+ ["k37rld13vesuu1y" 0] [:fixed "j4529iof817ortc" 0]
+ ["k37rld13vesuu1y" 1] [:fixed "5rzqgh44q8vg88g" 0]
+ ["srsbh7egshln1v" 0] [:fixed "fkhbas7uo8yl0uh" 2]
+ ["srsbh7egshln1v" 1] [:fixed "fkhbas7uo8yl0uh" 1]
+ ["stxjg1ycw3pdusl" 0] [:fixed "j3gcssco99yj8gz" 0]
+ ["z9jag580sj1v2wp" 0] [:fixed "oal0qo4l9bqtpyl" 0]}
+ :nodes
+{"11epgup4u032tqy" 
+{:color 2
+ :inputs ["sig"]
+ :label "Control:Smooth($sig 0.1)"
+ :name "faux envelope"
+ :outputs [""]
+ :parsed [:fn "Control:Smooth" [:tuple [:free-var "sig"] [:float "0.1"]]]
+ :pos [126 147]}
+ "44jbqv7a85auzdp" 
+{:color 3
+ :inputs ["sig"]
+ :label "Control:Smooth($sig 20)"
+ :outputs [""]
+ :parsed [:fn "Control:Smooth" [:tuple [:free-var "sig"] [:float "20"]]]
+ :pos [309 -381]}
+ "4jkspq6y8vcci3y" 
+{:inputs []
+ :label "[0.3 0.4 0.5 0.1]"
+ :name "arpeggio rates"
+ :outputs [""]
+ :parsed [:list [:float "0.3"] [:float "0.4"] [:float "0.5"] [:float "0.1"]]
+ :pos [-366 -158]}
+ "5073lluowg3fi7f" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [234 412]}
+ "5payhf7fhy2ueib" 
+{:inputs []
+ :label ""
+ :outputs [""]
+ :pos [-583 58]}
+ "5rzqgh44q8vg88g" 
+{:ephemeral-inputs #{"set1"}
+ :inputs ["func" "set1" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
+ :pos [-46 -69]}
+ "65kksuovemme4ds" 
+{:ephemeral-inputs #{"numbers1"}
+ :inputs ["numbers1" "numbers..."]
+ :label "Sum($numbers...)"
+ :name "mix bus"
+ :outputs [""]
+ :parsed [:fn "Sum" [:tuple [:free-var "numbers1"] [:free-var "numbers..."]]]
+ :pos [71 65]}
+ "6ns28wsyv5rzjem" 
+{:color 3
+ :inputs ["a"]
+ :label "* 0.1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:number-widget :float "-w9kq6b" "0.20" ""]]
+ :pos [455 -216]}
+ "6uji0b9i3mkleej" 
+{:cable-midpoints 
+{1 [34 33]
+ 2 [33 48]}
+ :inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :name "stereo panning"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [-74 65]}
+ "77k3y1v7z5sye45" 
+{:color 3
+ :inputs ["freq"]
+ :label "Gen:Pulse($freq 0.05)"
+ :outputs [""]
+ :parsed [:fn "Gen:Pulse" [:tuple [:free-var "freq"] [:number-widget :float "-w2ha87" "0.238" ""]]]
+ :pos [366 -300]}
+ "7ccvqan9p2d2yqw" 
+{:inputs []
+ :label "(250 60) `xy` (1800 2500)"
+ :outputs [""]
+ :parsed [:widget "-4kk5iv" {:mouse [0 0.5741637049036319 0.7823503100784565 0]} {:type :xy-pad, :kind :touch, :size :normal, :left-bottom [:tuple [:float "250"] [:float "60"]], :right-top [:tuple [:float "1800"] [:float "2500"]]}]
+ :pos [-465 136]}
+ "7hw3u02ws5xwadx" 
+{:cable-midpoints 
+{1 [237 -22]}
+ :color 2
+ :inputs ["sig" "freq" "bw"]
+ :label "Filter:Resonator($sig $freq $bw)"
+ :name "formant 1"
+ :outputs [""]
+ :parsed [:fn "Filter:Resonator" [:tuple [:free-var "sig"] [:free-var "freq"] [:free-var "bw"]]]
+ :pos [409 279]}
+ "8szb55dsrwtkhfz" 
+{:cable-midpoints 
+{}
+ :color 2
+ :inputs ["sig" "freq" "bw"]
+ :label "Filter:Resonator($sig $freq $bw)"
+ :name "formant 2"
+ :outputs [""]
+ :parsed [:fn "Filter:Resonator" [:tuple [:free-var "sig"] [:free-var "freq"] [:free-var "bw"]]]
+ :pos [118 382]}
+ "8tx8t1m6oe81mhk" 
+{:inputs ["sig"]
+ :label "o))"
+ :name "play here!"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [310 409]}
+ "9q48dzuyiyubnwe" 
+{:color 3
+ :ephemeral-inputs #{"xs1"}
+ :inputs ["xs1" "xs..."]
+ :label "Function:Table($xs...)"
+ :outputs [""]
+ :parsed [:fn "Function:Table" [:tuple [:free-var "xs1"] [:free-var "xs..."]]]
+ :pos [59 -273]}
+ "c7865o69lcj8xet" 
+{:inputs ["freq"]
+ :label "Gen:Tri($freq * 0.4) * 0.5 + 0.5"
+ :outputs [""]
+ :parsed [:infix [:infix [:fn "Gen:Tri" [:tuple [:infix [:free-var "freq"] "*" [:float "0.4"]]]] "*" [:float "0.5"]] "+" [:float "0.5"]]
+ :pos [-381 -56]}
+ "cycz1t2poqi8gv9" 
+{:color 3
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [83 -161]}
+ "dblcsav0o0x44wr" 
+{:inputs ["sig" "pan"]
+ :label "pan($sig $pan)"
+ :outputs [""]
+ :parsed [:fn "Panner" [:tuple [:free-var "sig"] [:free-var "pan"]]]
+ :pos [-266 55]}
+ "ezwncmchb1si3i" 
+{:color 3
+ :inputs ["a"]
+ :label "+ 50"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "50"]]
+ :pos [-7 -349]}
+ "fkhbas7uo8yl0uh" 
+{:color 2
+ :inputs ["pair"]
+ :label "(gate x y) = First($pair)"
+ :outputs ["gate" "x" "y"]
+ :parsed [:fn "First" [:tuple [:free-var "pair"]]]
+ :pos [-211 242]}
+ "j3gcssco99yj8gz" 
+{:cable-midpoints 
+{0 [-51 -43]}
+ :color 2
+ :inputs ["a"]
+ :label "+ 0.1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:float "0.1"]]
+ :pos [-190 147]}
+ "j4529iof817ortc" 
+{:color 3
+ :ephemeral-inputs #{"fns2" "fns3" "fns4" "fns5" "fns6" "fns7" "fns1"}
+ :inputs ["fns2" "fns3" "fns4" "fns5" "fns6" "fns7" "fns1" "fns..."]
+ :label "Function:Pipeline($fns...)"
+ :name "synthesis voice"
+ :outputs [""]
+ :parsed [:fn "Function:Pipeline" [:tuple [:free-var "fns2"] [:free-var "fns3"] [:free-var "fns4"] [:free-var "fns5"] [:free-var "fns6"] [:free-var "fns7"] [:free-var "fns1"] [:free-var "fns..."]]]
+ :pos [264 -145]}
+ "k37rld13vesuu1y" 
+{:cable-midpoints 
+{0 [15 56]
+ 1 [167 1]}
+ :ephemeral-inputs #{"set1"}
+ :inputs ["func" "set1" "set..."]
+ :label "Algorithm:Map($func $set...)"
+ :name "render voices"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
+ :pos [437 -19]}
+ "oal0qo4l9bqtpyl" 
+{:color 3
+ :inputs []
+ :label "[0 5 7 10 12 15 17 19 22 24]"
+ :name "musical scale in semitones"
+ :outputs [""]
+ :parsed [:list [:float "0"] [:float "5"] [:float "7"] [:float "10"] [:float "12"] [:float "15"] [:float "17"] [:float "19"] [:float "22"] [:float "24"]]
+ :pos [-365 -275]}
+ "srsbh7egshln1v" 
+{:color 2
+ :inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-57 329]}
+ "stxjg1ycw3pdusl" 
+{:color 2
+ :inputs ["a"]
+ :label "* 800"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:number-widget :float "qoq23j" "368" ""]]
+ :pos [-68 147]}
+ "u0u9z4alja9zooz" 
+{:color 3
+ :inputs ["note"]
+ :label "mtof($note)"
+ :outputs [""]
+ :parsed [:fn "mtof" [:tuple [:free-var "note"]]]
+ :pos [87 -392]}
+ "xqnmew4oq3qn2x" 
+{:inputs []
+ :label "; ## Chip-Monks ##\n\n\nTry mousing/touching the XY pad!"
+ :outputs []
+ :parsed [:comment "## Chip-Monks ##\n\n\nTry mousing/touching the XY pad!"]
+ :pos [-452 -408]}
+ "z9jag580sj1v2wp" 
+{:color 3
+ :inputs ["tuple"]
+ :label "Arity($tuple)"
+ :outputs [""]
+ :parsed [:fn "Arity" [:tuple [:free-var "tuple"]]]
+ :pos [-31 -210]}}
+ :scale 1
+ :scroll [0 0]}}
