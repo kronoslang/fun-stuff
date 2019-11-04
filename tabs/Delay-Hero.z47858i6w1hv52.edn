@@ -30,7 +30,8 @@
  :label "Function:Pipeline($fns...)"
  :outputs [""]
  :parsed [:fn "Function:Pipeline" [:tuple [:free-var "fns1"] [:free-var "fns2"] [:free-var "fns3"] [:free-var "fns..."]]]
- :pos [430 4]}
+ :pos [430 4]
+ }
  "3x97yee40wyuya5" 
 {:cable-midpoints 
 {}
@@ -38,73 +39,84 @@
  :label "* 0.2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "0.2"]]
- :pos [-135 312]}
+ :pos [-135 312]
+ }
  "65eoaeso231s4sj" 
 {:color 2
  :inputs []
  :label "0.499d"
  :outputs [""]
  :parsed [:double "0.499"]
- :pos [-346 232]}
+ :pos [-346 232]
+ }
  "7cbkv7ktl5aha2h" 
 {:inputs ["sig" "rate"]
  :label "Control:Smooth-Audio($sig $rate)"
  :outputs [""]
  :parsed [:fn "Control:Smooth-Audio" [:tuple [:free-var "sig"] [:free-var "rate"]]]
- :pos [-136 46]}
+ :pos [-136 46]
+ }
  "90424agz2cw94u6" 
 {:inputs []
  :label "20"
  :outputs [""]
  :parsed [:float "20"]
- :pos [-196 -73]}
+ :pos [-196 -73]
+ }
  "ccnuruc0443vwz1" 
 {:inputs []
  :label "0 .o 1"
  :name "feedback tone"
  :outputs [""]
  :parsed [:widget "-yz187g" 0.825 {:type :dial, :skin :circular, :min [:float "0"], :max [:float "1"]}]
- :pos [-261 -259]}
+ :pos [-261 -259]
+ }
  "do3nwjahg18a913" 
 {:inputs []
  :label ";# Delay Hero #\n\n\nThis patch has a soft-saturating unstable delay line. Give the delay time slider a few vigorous shakes and hear chaotic noise emerge!"
  :outputs []
  :parsed [:comment "# Delay Hero #\n\n\nThis patch has a soft-saturating unstable delay line. Give the delay time slider a few vigorous shakes and hear chaotic noise emerge!"]
- :pos [69 -359]}
+ :pos [69 -359]
+ }
  "hecsi8kjw6c94kw" 
 {:inputs ["sig"]
  :label "o))"
  :name "play here!"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [67 304]}
+ :pos [67 304]
+ }
  "ionpfsd6gowksil" 
 {:inputs []
  :label "0.001 --x-- 20"
  :name "delay time"
  :outputs [""]
  :parsed [:widget "hg6ifj" 0.18633331298828126 {:type :slider, :limits [[:float "0.001"] [:float "20"]], :render [:limits], :size 5, :orientation :vertical, :curve :exponential}]
- :pos [-422 -259]}
+ :pos [-422 -259]
+ }
  "j7eqvly8s6f3vxr" 
 {:color 3
  :inputs ["sig" "cutoff"]
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [440 -161]}
+ :pos [440 -161]
+ }
  "jvm9g06u007la71" 
 {:inputs ["sig" "delay-time" "buffer-size" "feedback-fn"]
  :label "Delay:Static-Delay($sig $delay-time $buffer-size $feedback-fn)"
  :outputs [""]
  :parsed [:fn "Delay:Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay-time"] [:free-var "buffer-size"] [:free-var "feedback-fn"]]]
- :pos [269 194]}
+ :pos [269 194]
+ }
  "k4ldg1566se9jyp" 
 {:color 2
  :inputs ["a"]
  :label "* 0.000001"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "0.000001"]]
- :pos [-58 232]}
+ :pos [-58 232]
+ }
  "l7p5ad9kmip687c" 
 {:cable-midpoints 
 {0 [-282 179]}
@@ -112,33 +124,38 @@
  :label "Approx:Tanh($w)"
  :outputs [""]
  :parsed [:fn "Approx:Tanh" [:tuple [:free-var "w"]]]
- :pos [-288 313]}
+ :pos [-288 313]
+ }
  "lru8b681x1fw7or" 
 {:color 3
  :inputs ["a"]
  :label "* -1.2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:number-widget :float "-lod2z4" "-1.2" ""]]
- :pos [128 -118]}
+ :pos [128 -118]
+ }
  "mw7lp7d73asyvke" 
 {:color 2
  :inputs ["seed"]
  :label "Gen:Noise($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
- :pos [-202 232]}
+ :pos [-202 232]
+ }
  "tcn77xzqhsd3o4" 
 {:inputs []
  :label "#1000000"
  :outputs [""]
  :parsed [:invariant "1000000"]
- :pos [96 -4]}
+ :pos [96 -4]
+ }
  "w3j1ppfb59zedcy" 
 {:color 3
  :inputs ["w"]
  :label "Approx:Tanh($w)"
  :outputs [""]
  :parsed [:fn "Approx:Tanh" [:tuple [:free-var "w"]]]
- :pos [313 -142]}}
+ :pos [313 -142]
+ }}
  :scale 1
  :scroll [0 0]}}

@@ -13,12 +13,12 @@ Delay-Hero() {
 (n1vaqh8mx2jib8dq-0) = Function:Pipeline(nlru8b681x1fw7or-0 nw3j1ppfb59zedcy-0 nj7eqvly8s6f3vxr-0 )
 (nk4ldg1566se9jyp-0) = (nmw7lp7d73asyvke-0 * 0.000001)
 (n7cbkv7ktl5aha2h-0) = Control:Smooth-Audio(nionpfsd6gowksil-0 n90424agz2cw94u6-0)
-(nionpfsd6gowksil-0) = (0.001 * Math:Pow(20 / 0.001 0.18633331298828126))
+(nionpfsd6gowksil-0) = 0.18633331298828126
 (njvm9g06u007la71-0) = Delay:Static-Delay(nk4ldg1566se9jyp-0 n7cbkv7ktl5aha2h-0 ntcn77xzqhsd3o4-0 n1vaqh8mx2jib8dq-0)
 (nlru8b681x1fw7or-0) = (a) => ( (a * -1.2) ) 
 (nhecsi8kjw6c94kw-0) = n3x97yee40wyuya5-0
 (n90424agz2cw94u6-0) = 20
-(nccnuruc0443vwz1-0) = (0 + 0.825 * (1 - 0))
+(nccnuruc0443vwz1-0) = 0.825
 (nw3j1ppfb59zedcy-0) = (w) => ( Approx:Tanh(w) ) 
 (nmw7lp7d73asyvke-0) = Gen:Noise(n65eoaeso231s4sj-0)
 (n65eoaeso231s4sj-0) = 0.499d

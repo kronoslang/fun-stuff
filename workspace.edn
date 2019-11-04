@@ -1,7 +1,7 @@
 {:assets 
 {}
- :current-tab 2
- :file "fun-stuff.veneer"
+ :current-tab 0
+ 
  :manifest 
 {:dependencies 
 {}
@@ -11,4 +11,9 @@
  :name "fun-stuff"
  :url "https://github.com/kronoslang/fun-stuff"
  :version "0.1"}
+ :origin 
+{:branch "master"
+ :parents ["fbfa2dd3aaf0f6c2a905336849b91e421ba1906a"]
+ :service :github
+ :slug "kronoslang/fun-stuff"}
  :tabs ("tabs/Delay-Hero.z47858i6w1hv52.edn" "tabs/Chip-Monks.286iq6ooju8ruui.edn" "tabs/Blade-Runner.ngr2foc67t144x5.edn" "tabs/mtof.gf1415fa3pgv25h.edn" "tabs/Panner.ds37fyc43jtk7gj.edn")}
