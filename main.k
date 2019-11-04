@@ -30,19 +30,19 @@ nhecsi8kjw6c94kw-0
 }
 
 Chip-Monks() {
+(nd0hcag4797rongb-0) = Control:Smooth(n7ccvqan9p2d2yqw-0 5)
 (n9q48dzuyiyubnwe-0) = Function:Table(noal0qo4l9bqtpyl-0 )
 (nk37rld13vesuu1y-0) = Algorithm:Map(nj4529iof817ortc-0 n5rzqgh44q8vg88g-0 )
 (n6uji0b9i3mkleej-0) = Algorithm:Zip-With(ndblcsav0o0x44wr-0 nk37rld13vesuu1y-0 n5rzqgh44q8vg88g-0)
 (n77k3y1v7z5sye45-0) = (freq) => ( Gen:Pulse(freq 0.238) ) 
 (ncycz1t2poqi8gv9-0) = (b) => ( (nz9jag580sj1v2wp-0 * b) ) 
-(n8szb55dsrwtkhfz-0) = Filter:Resonator(n65kksuovemme4ds-0 nsrsbh7egshln1v-0 n11epgup4u032tqy-0)
-(n7ccvqan9p2d2yqw-0) = [Eval({ (on x y) = arg   (l t) = (250 60)   (r b) = (1800 2500)   (on l + x * (r - l)       b + y * (t - b)) } (0 0.5741637049036319 0.7823503100784565))]
-(n11epgup4u032tqy-0) = Control:Smooth(nstxjg1ycw3pdusl-0 0.1)
+(n8szb55dsrwtkhfz-0) = Filter:Resonator(n65kksuovemme4ds-0 nsrsbh7egshln1v-0 nstxjg1ycw3pdusl-0)
+(n7ccvqan9p2d2yqw-0) = [Eval({ (on x y) = arg   (l t) = (250 60)   (r b) = (1800 2500)   (on l + x * (r - l)       b + y * (t - b)) } (0 0.4320580300984635 0.5459542167903441))]
 (n44jbqv7a85auzdp-0) = (sig) => ( Control:Smooth(sig 20) ) 
 (nj4529iof817ortc-0) = Function:Pipeline(ncycz1t2poqi8gv9-0 n9q48dzuyiyubnwe-0 nezwncmchb1si3i-0 nu0u9z4alja9zooz-0 n44jbqv7a85auzdp-0 n77k3y1v7z5sye45-0 n6ns28wsyv5rzjem-0 )
 (n4jkspq6y8vcci3y-0) = [0.3 0.4 0.5 0.1]
 (nsrsbh7egshln1v-0) = (nfkhbas7uo8yl0uh-2 + nfkhbas7uo8yl0uh-1)
-(nfkhbas7uo8yl0uh-0 nfkhbas7uo8yl0uh-1 nfkhbas7uo8yl0uh-2) = First(n7ccvqan9p2d2yqw-0)
+(nfkhbas7uo8yl0uh-0 nfkhbas7uo8yl0uh-1 nfkhbas7uo8yl0uh-2) = First(nd0hcag4797rongb-0)
 (nz9jag580sj1v2wp-0) = Arity(noal0qo4l9bqtpyl-0)
 (noal0qo4l9bqtpyl-0) = [0 5 7 10 12 15 17 19 22 24]
 (nc7865o69lcj8xet-0) = (freq) => ( ((Gen:Tri((freq * 0.4)) * 0.5) + 0.5) ) 
@@ -56,7 +56,7 @@ Chip-Monks() {
 (nstxjg1ycw3pdusl-0) = (nj3gcssco99yj8gz-0 * 368)
 (n5rzqgh44q8vg88g-0) = Algorithm:Map(nc7865o69lcj8xet-0 n4jkspq6y8vcci3y-0 )
 (nj3gcssco99yj8gz-0) = (nfkhbas7uo8yl0uh-0 + 0.1)
-(n7hw3u02ws5xwadx-0) = Filter:Resonator(n65kksuovemme4ds-0 nfkhbas7uo8yl0uh-1 n11epgup4u032tqy-0)
+(n7hw3u02ws5xwadx-0) = Filter:Resonator(n65kksuovemme4ds-0 nfkhbas7uo8yl0uh-1 nstxjg1ycw3pdusl-0)
 n8tx8t1m6oe81mhk-0
 }
 

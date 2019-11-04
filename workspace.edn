@@ -15,7 +15,7 @@
  :version "0.1"}
  :origin 
 {:branch "master"
- :parents ["5922a7b5ebd19b2d2e4ff5210710d579c428280a"]
+ :parents ["67ca74ae1aa2bb8b14843727bfc1f1bdd4a38f4a"]
  :service :github
  :slug "kronoslang/fun-stuff"}
  :tabs ("tabs/Delay-Hero.z47858i6w1hv52.edn" "tabs/Chip-Monks.286iq6ooju8ruui.edn" "tabs/Blade-Runner.ngr2foc67t144x5.edn" "tabs/mtof.gf1415fa3pgv25h.edn" "tabs/Panner.ds37fyc43jtk7gj.edn")}

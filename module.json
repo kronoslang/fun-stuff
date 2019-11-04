@@ -4,9 +4,9 @@
   "export-format": "[:Pure-Data :macOs :x64 10 14]",
   "license": "https://www.eclipse.org/legal/epl-v10.html",
   "name": "fun-stuff",
-  "url": "https://github.com/kronoslang/fun-stuff",
-  "version": "0.1",
   "origin": {
     "slug": "pellerveo/hevonen"
-  }
+  },
+  "url": "https://github.com/kronoslang/fun-stuff",
+  "version": "0.1"
 }
