@@ -5,5 +5,8 @@
   "license": "https://www.eclipse.org/legal/epl-v10.html",
   "name": "fun-stuff",
   "url": "https://github.com/kronoslang/fun-stuff",
-  "version": "0.1"
+  "version": "0.1",
+  "origin": {
+    "slug": "pellerveo/hevonen"
+  }
 }
