@@ -108,10 +108,11 @@
  "7ccvqan9p2d2yqw" 
 {:inputs []
  :label "(250 60) `xy` (1800 2500)"
+ :name "voice"
  :outputs [""]
  :parsed [:widget "-4kk5iv" {:mouse [0 0.4320580300984635 0.5459542167903441 0]} {:type :xy-pad, :kind :touch, :size :normal, :left-bottom [:tuple [:float "250"] [:float "60"]], :right-top [:tuple [:float "1800"] [:float "2500"]]}]
  :pos [-465 136]
- }
+ :selected true}
  "7hw3u02ws5xwadx" 
 {:cable-midpoints 
 {1 [237 -22]}
@@ -172,7 +173,7 @@
  :outputs [""]
  :parsed [:fn "Control:Smooth" [:tuple [:free-var "sig"] [:float "5"]]]
  :pos [-139 446]
- :selected true}
+ }
  "dblcsav0o0x44wr" 
 {:inputs ["sig" "pan"]
  :label "pan($sig $pan)"

@@ -100,16 +100,6 @@ Blade-Runner() {
 n5o2c4kbn3fnita-0
 }
 
-mtof(note) {
-;; Convert MIDI note number to frequency
-(nb3t92aroiwyv5rh-0) = (nneehcjix1jqc5cc-0 / 12)
-(nd3xstahngcggmsv-0) = arg
-(nffnwlude42o951v-0) = Math:Pow(2 nb3t92aroiwyv5rh-0)
-(nimaay1n2baam9y1-0) = (nffnwlude42o951v-0 * 440)
-(nneehcjix1jqc5cc-0) = (nd3xstahngcggmsv-0 - 69)
-nimaay1n2baam9y1-0
-}
-
 Panner(sig pan) {
 (n1cqr5pvfawq86w3-0) = Min(#1 n3hv6bphet5u397m-0)
 (n3hv6bphet5u397m-0) = Max(#0 npuo4n4b0or3wwbh-1)
@@ -119,6 +109,16 @@ Panner(sig pan) {
 (nhvw37hh0vduzehw-0) = (n1cqr5pvfawq86w3-0 * npuo4n4b0or3wwbh-0)
 (npuo4n4b0or3wwbh-0 npuo4n4b0or3wwbh-1) = arg
 ne2b4q5uhad9adpc-0
+}
+
+mtof(note) {
+;; Convert MIDI note number to frequency
+(nb3t92aroiwyv5rh-0) = (nneehcjix1jqc5cc-0 / 12)
+(nd3xstahngcggmsv-0) = arg
+(nffnwlude42o951v-0) = Math:Pow(2 nb3t92aroiwyv5rh-0)
+(nimaay1n2baam9y1-0) = (nffnwlude42o951v-0 * 440)
+(nneehcjix1jqc5cc-0) = (nd3xstahngcggmsv-0 - 69)
+nimaay1n2baam9y1-0
 }
 
 }

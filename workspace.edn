@@ -1,6 +1,6 @@
 {:assets 
 {}
- :current-tab 0
+ :current-tab 1
  
  :manifest 
 {:dependencies 
@@ -15,7 +15,7 @@
  :version "0.1"}
  :origin 
 {:branch "master"
- :parents ["67ca74ae1aa2bb8b14843727bfc1f1bdd4a38f4a"]
+ :parents ["bb31d2be3a494f9accc3ed77406b12cdedd394ff"]
  :service :github
  :slug "kronoslang/fun-stuff"}
- :tabs ("tabs/Delay-Hero.z47858i6w1hv52.edn" "tabs/Chip-Monks.286iq6ooju8ruui.edn" "tabs/Blade-Runner.ngr2foc67t144x5.edn" "tabs/mtof.gf1415fa3pgv25h.edn" "tabs/Panner.ds37fyc43jtk7gj.edn")}
+ :tabs ("tabs/Delay-Hero.z47858i6w1hv52.edn" "tabs/Chip-Monks.286iq6ooju8ruui.edn" "tabs/Blade-Runner.ngr2foc67t144x5.edn" "tabs/Panner.ds37fyc43jtk7gj.edn" "tabs/mtof.gf1415fa3pgv25h.edn")}

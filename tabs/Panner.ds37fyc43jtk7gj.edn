@@ -1,4 +1,15 @@
 {:draft-argument "Gen:Sin(440) Gen:Phasor(0.1)"
+ :export 
+{:arguments 
+{"pan" 
+{:default-value "0.5"
+ :max-value "1"
+ :min-value "0"
+ :signal-type "control"}
+ "sig" 
+{:default-value "0"
+ :signal-type "audio"}}
+ :export-this-tab true}
  :identifier "Panner"
  :identity "ds37fyc43jtk7gj"
  :patch
